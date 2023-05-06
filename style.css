@@ -1,47 +1,42 @@
 body {
     text-align: center;
-    background: darkgray;
-    color: black;
+    background: black;
+    color: white;
 }
 
 .main {
     margin-top: 50px;
 }
 
-.work {
-    margin-top: 50px;
-    color: black;
+.summary {
+    text-align: start;
 }
 
-.work-section{
-    display: flex;
-    justify-content: center;
+.about {
+
+}
+
+.work-section {
+    margin-top: 30px;
+}
+
+.card {
+    color: black;
+    background: gray;
+}
+
+.card-link {
+    color: darkblue;
 }
 
 .contact {
     margin-top: 50px;
 }
 
-.card {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px;
-    background: gray;
-}
-
 .contact-list {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
-}
-
-.work-heading {
-    color: black;
-    margin-bottom: 20px;
-}
-
-li {
-    display: inline;
 }
 
 .contact-heading {
@@ -64,7 +59,7 @@ li {
 }
 
 .fa-github {
-  background: black;
+  background: gray;
   color: white;
 }
 
@@ -78,11 +73,11 @@ li {
     color: white;
 }
 
-.fa:hover {
-    opacity: 0.7;
+.fa-phone {
+    background: green;
+    color: white;
 }
 
-
-.card-link {
-    color: darkblue;
+.fa:hover {
+    opacity: 0.7;
 }
