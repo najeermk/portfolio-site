@@ -1,97 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Najeer MK</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    section{
+      padding: 60px 0;
+    }
+  </style>
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	  <a class="navbar-brand" href="">Najeer M K</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md navbar-light  bg-dark py-4 sticky-top">
+    <div class="container-xxl">
+      <!-- navbar title -->
+      <a class="navbar-brand" href="#home">
+        <span class="text-white fw-bold">NAJEER MK</span>
+      </a>
+      <!-- toggle button for mobile nav -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-	  <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-	    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Work</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact</a>
-	      </li>
-	    </ul>
-	  </div> -->
-	</nav>
+      <!-- navbar links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#works">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact">Contact</a>
+          </li>       
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-	<div class="container">
+  <!-- home -->
+  <section id="home">
+    <div class="container-lg">
+      <div class="row g-4 justify-content-center align-items-center text-center">
 
-		<div class="main">
-			<h3>NAJEER M K</h3>	
-			<p class="summary">
-				Hey I am Najeer, Passionate Software Developer with over 1 year of experience and a passion for creating efficient and innovative solutions. Proficient in multiple programming languages and platform such as PHP, JavaScript, Python, Laravel, Vue.js, Node.js and React.js, with a focus on delivering high quality, user friendly software. Skilled in collaborating with cross-functional teams and driving project success through effective communication and problem solving skills.
-			</p>
-		</div>
+          <h1>
+            <div class="display-2">NAJEER MK</div>
+            <div class="display-5 text-muted">Software Developer</div>
+          </h1>
+          <p class="lead my-4 text-muted">Hey I am Najeer, Passionate Software Developer with 2 years of experience and a passion for creating efficient and innovative solutions. Proficient in multiple programming languages and platform such as PHP, JavaScript, Python, Laravel, Vue.js, Node.js and React.js, with a focus on delivering high quality, user friendly software. Skilled in collaborating with cross-functional teams and driving project success through effective communication and problem solving skills.</p>
+      </div>
+    </div>
+  </section>
 
-		<div class="row">
-		  <div class="col-sm-4 work-section">
-		    <div class="card">
-		      <div class="card-body">
-		        <h5 class="card-title">Job site</h5>
-					<p class="card-text">A Job site developed by using PHP Laravel and MySQL</p>
-		        <a href="https://github.com/najeermk/laravelProject" class="card-link">Github link</a>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col-sm-4 work-section">
-		    <div class="card">
-		      <div class="card-body">
-		        <h5 class="card-title">Blogging site</h5>
-					<p class="card-text">A Blogging site developed using laravel framework</p>
-		        <a href="https://github.com/najeermk/blogApp" class="card-link">Github link</a>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col-sm-4 work-section">
-		    <div class="card">
-		      <div class="card-body">
-		        <h5 class="card-title">Login system</h5>
-				<p class="card-text">A Login system app developed using Codeigniter</p>
-		        <a href="https://github.com/najeermk/ci-project" class="card-link">Github link</a>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col-sm-4 work-section">
-		    <div class="card">
-		    	<div class="card-body">
-					<h5 class="card-title">Tenzies game</h5>
-					<p class="card-text">A tenzies game developed using frontend technology react.js</p>
-					<a href="https://github.com/najeermk/react-game-app" class="card-link">Github link</a>
-				</div>
-			</div>
-		  </div>
-		</div>
+  <!-- works -->
+  <section id="works" class="bg-light mt-5">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Works</h2>
+      </div>
 
-		<div class="contact">
-			<h4 class="contact-heading">Contact</h4>
-			<ul class="contact-list">
-				<li><a href="https://www.linkedin.com/in/najeermk" class="fa fa-linkedin"></a></li>
-				<li><a href="mailto:najeermk96@gmail.com" class="fa fa-envelope"></a></li>
-				<li><a href="https://github.com/najeermk" class="fa fa-github"></a></li>
-				<li><a href="https://www.instagram.com/najeer_mk/" class="fa fa-instagram"></a></li>
-			</ul>
-		</div>
+      <div class="row my-5 align-items-center ">
+        <div class="col-md-4 mt-4">
+          <div class="card border-0 shadow-sm">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Job site</h4>
+              <p class="card-text mx-5 text-muted d-none d-lg-block">A Job site developed by using PHP Laravel and MySQL</p>
+              <a href="https://github.com/najeermk/laravelProject" class="btn btn-outline-primary btn-lg mt-3">
+                Github link
+              </a>
+            </div>
+          </div>
+        </div>
 
-	</div>
+        <div class="col-md-4 mt-4">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Blogging site</h4>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">A Blogging site developed using laravel framework</p>
+                <a href="https://github.com/najeermk/blogApp" class="btn btn-outline-primary btn-lg mt-3">
+                  Github link
+                </a>
+              </div>
+            </div>
+          </div>
 
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+          <div class="col-md-4 mt-4">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Login system</h4>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">A Login system app developed using Codeigniter</p>
+                <a href="https://github.com/najeermk/ci-project" class="btn btn-outline-primary btn-lg mt-3">
+                  Github link
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-4">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Tenzies Game</h4>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">A tenzies game developed using technology react.js</p>
+                <a href="https://github.com/najeermk/react-game-app" class="btn btn-outline-primary btn-lg mt-3">
+                  Github link
+                </a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- experience -->
+  <section id="experience">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Work experience</h2>
+      </div>
+
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-8">
+          <div class="list-group">
+            <div class="list-group-item py-3 mb-3">
+              
+              <h5 class="mb-1">Junior Software Engineer</h5>
+              <small>Vanilla Networks Pvt Ltd</small>
+              <ul class="mt-3">
+                <li class="my-1">Developed and maintained scalable PHP-based web applications using Laravel framework, ensuring high performance and scalability</li>
+                <li class="my-1">Implemented front-end designs using HTML5, CSS3, and JavaScript, Vue.js delivering responsive design and user-friendly interfaces</li> 
+            </ul>            
+            </div>
+            <div class="list-group-item py-3">
+              
+              <h5 class="mb-1">Web Developer</h5>
+              <small>ReviewBit</small>
+              <ul class="mt-3">
+                <li class="my-1">Collaborated with Front-end developers to integrate user-facing elements with server side logic and to integrate secure APIs</li> 
+                <li class="my-1">Used RESTful API as API technology and NoSQL database MongoDB in the Backend development</li>
+              </ul>            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="contact"  class="bg-light">
+    <div class="container-lg">
+      
+      <div class="text-center">
+        <h2>Get in Touch</h2>
+      </div>
+      <div class="row my-5">
+        <ul class="list-group list-group-horizontal justify-content-evenly">
+          <li class="list-group-item"><a href="https://www.linkedin.com/in/najeermk" class="fa fa-linkedin fa-lg"></a></li>
+          <li class="list-group-item"><a href="mailto:najeermk96@gmail.com" class="fa fa-envelope fa-lg"></a></li>
+          <li class="list-group-item"><a href="https://github.com/najeermk" class="fa fa-github fa-lg"></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>
