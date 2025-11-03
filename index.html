@@ -1,210 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Najeer MK</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
-
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-md navbar-light  bg-dark py-4 sticky-top">
-    <div class="container-xxl">
-      <!-- navbar title -->
-      <a class="navbar-brand" href="#home">
-        <span class="text-white fw-bold">NAJEER MK</span>
-      </a>
-      <!-- toggle button for mobile nav -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- navbar links -->
-      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#works">Works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#contact">Contact</a>
-          </li> 
-          <li class="nav-item mx-2">
-            <button id="theme-toggle" class="btn btn-light">Dark Mode</button>
-          </li>      
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- home -->
-  <section id="home">
-    <div class="container-lg">
-      <div class="row g-4 justify-content-center align-items-center text-center">
-
-          <h1>
-            <div class="display-2">NAJEER MK</div>
-            <div class="display-5 text-muted">Software Developer</div>
-          </h1>
-          <p class="lead my-4 text-muted">Hey I am Najeer, Passionate Software Developer with <span id="experience-years">3</span> years of experience and a passion for creating efficient and innovative solutions. Proficient in multiple programming languages and platform such as PHP, JavaScript, Python, Laravel, Vue.js, Node.js and React.js, with a focus on delivering high quality, user friendly software. Skilled in collaborating with cross-functional teams and driving project success through effective communication and problem solving skills.</p>
-      </div>
-    </div>
-  </section>
-<hr>
-  <!-- experience -->
-  <section id="experience"  class="mt-5">
-    <div class="container-lg">
-      <div class="text-center">
-        <h2>Work experience</h2>
-      </div>
-
-      <div class="row justify-content-center my-5">
-        <div class="col-lg-8">
-          <div class="list-group">
-            <div class="list-group-item py-3 mb-3">
-              
-              <h5 class="mb-1">Software Developer</h5>
-              <small>Al Yalayis Government Transactions Center</small>
-              <ul class="mt-3">
-                <li class="my-1">Development and support of Custom ERP Software using PHP, MySQL, jquery...</li>
-                <li class="my-1">Implemented front-end designs using HTML5, CSS3, and JavaScript, Jquery delivering responsive design and user-friendly interfaces</li> 
-            </ul>            
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-indigo-700 to-indigo-500 text-slate-100 py-6">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">NAJEER M K</h1>
+            <p class="text-xl opacity-90">Software Engineer</p>
+            <div class="mt-6 flex justify-center gap-4">
+                <a href="#contact" class="bg-white text-gray-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Contact Me</a>
+                <a href="#projects" class="border-2 border-slate-100 px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-gray-700 transition">View Work</a>
             </div>
-            <div class="list-group-item py-3 mb-3">
-              
-              <h5 class="mb-1">Freelance Software Developer</h5>
-              <small>Nile Water Purification and Supply LLC</small>
-              <ul class="mt-3">
-                <li class="my-1">Developed Internal Software for water distributing company in Ajman, UAE</li>
-                <li class="my-1">Implemented Software for tracking daily tracks and customer information</li> 
-            </ul>            
-            </div>
-            <div class="list-group-item py-3 mb-3">
-              
-              <h5 class="mb-1">Junior Software Engineer</h5>
-              <small>Vanilla Networks Pvt Ltd</small>
-              <ul class="mt-3">
-                <li class="my-1">Developed and maintained scalable PHP-based web applications using Laravel framework, ensuring high performance and scalability</li>
-                <li class="my-1">Implemented front-end designs using HTML5, CSS3, and JavaScript, Vue.js delivering responsive design and user-friendly interfaces</li> 
-            </ul>            
-            </div>
-            <div class="list-group-item py-3">
-              
-              <h5 class="mb-1">Web Developer</h5>
-              <small>ReviewBit</small>
-              <ul class="mt-3">
-                <li class="my-1">Collaborated with Front-end developers to integrate user-facing elements with server side logic and to integrate secure APIs</li> 
-                <li class="my-1">Used RESTful API as API technology and NoSQL database MongoDB in the Backend development</li>
-              </ul>            
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>  
-<hr>
-  <!-- works -->
-  <section id="works">
-    <div class="container-lg">
-      <div class="text-center">
-        <h2>Works</h2>
-      </div>
+    </header>
 
-      <div class="row my-5 align-items-center ">
-        <div class="col-md-4 mt-4">
-          <div class="card border-0 shadow-sm">
-            <div class="card-body text-center py-4">
-              <h4 class="card-title">Job site</h4>
-              <p class="card-text mx-5 text-muted d-none d-lg-block">A Job site developed by using PHP Laravel and MySQL</p>
-              <a href="https://github.com/najeermk/laravelProject" class="btn btn-outline-primary btn-lg mt-3">
-                Github link
-              </a>
-            </div>
-          </div>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <ul class="flex justify-center gap-8 py-4 flex-wrap">
+                <li><a href="#about" class="text-black font-semibold hover:text-gray-500 transition">About</a></li>
+                <li><a href="#skills" class="text-black font-semibold hover:text-gray-500 transition">Skills</a></li>
+                <li><a href="#experience" class="text-black font-semibold hover:text-gray-500 transition">Experience</a></li>
+                <li><a href="#projects" class="text-black font-semibold hover:text-gray-500 transition">Projects</a></li>
+                <li><a href="#contact" class="text-black font-semibold hover:text-gray-500 transition">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="col-md-4 mt-4">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body text-center py-4">
-                <h4 class="card-title">Blogging site</h4>
-                <p class="card-text mx-5 text-muted d-none d-lg-block">A Blogging site developed using laravel framework</p>
-                <a href="https://github.com/najeermk/blogApp" class="btn btn-outline-primary btn-lg mt-3">
-                  Github link
-                </a>
-              </div>
+    <div class="container mx-auto px-4 py-8">
+        <!-- About Section -->
+        <section id="about" class="bg-white rounded-lg shadow-lg p-8 mb-8 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-purple-600 mb-6 border-b-4 border-purple-600 pb-2">About Me</h2>
+            <!-- <div class="grid md:grid-cols-3 gap-8 items-center"> -->
+                <!-- <div class="flex justify-center">
+                    <div class="w-48 h-48 bg-gradient-to-br from-purple-600 to-indigo-600 rounded-full flex items-center justify-center text-white text-6xl font-bold">
+                        JD
+                    </div>
+                </div> -->
+                <div class="">
+                    <p class="text-gray-700 text-lg mb-4">
+                        Hi! I'm a passionate Software Engineer with 5+ years of experience building web applications and software solutions. I specialize in creating efficient, scalable, and user-friendly applications.
+                    </p>
+                    <p class="text-gray-700 text-lg mb-4">
+                        I love solving complex problems and turning ideas into reality through code. When I'm not coding, you can find me contributing to open-source projects or learning new technologies.
+                    </p>
+                    <div class="flex gap-4 mt-6">
+                        <a href="https://www.github.com/najeermk" class="text-gray-800 hover:text-gray-600 transition text-3xl" target="_blanks">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/najeermk" target="_blank" class="text-indigo-600 hover:text-indigo-400 transition text-3xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://wa.me/971502170877" target="_blank" class="text-green-600 hover:text-green-400 transition text-3xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="bg-white rounded-lg shadow-lg p-8 mb-8 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-purple-600 mb-6 border-b-4 border-purple-600 pb-2">Technical Skills</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-purple-600">
+                    <h3 class="text-xl font-bold text-purple-600 mb-3">Frontend</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• React.js & Next.js</li>
+                        <li>• Vue.js</li>
+                        <li>• HTML5 & CSS3</li>
+                        <li>• Tailwind CSS</li>
+                        <li>• JavaScript/TypeScript</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-indigo-600">
+                    <h3 class="text-xl font-bold text-indigo-600 mb-3">Backend</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Node.js & Express</li>
+                        <li>• Python & Django</li>
+                        <li>• PHP & Laravel</li>
+                        <li>• MySQL, PostgreSQL & MongoDB</li>
+                        <li>• RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-purple-500">
+                    <h3 class="text-xl font-bold text-purple-500 mb-3">Tools & Others</h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>• Git & GitHub</li>
+                        <li>• Docker</li>
+                        <li>• AWS & Cloud Services</li>
+                        <li>• CI/CD</li>
+                        <li>• Agile/Scrum</li>
+                    </ul>
+                </div>
             </div>
-          </div>
+        </section>
 
-          <div class="col-md-4 mt-4">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body text-center py-4">
-                <h4 class="card-title">Login system</h4>
-                <p class="card-text mx-5 text-muted d-none d-lg-block">A Login system app developed using Codeigniter</p>
-                <a href="https://github.com/najeermk/ci-project" class="btn btn-outline-primary btn-lg mt-3">
-                  Github link
-                </a>
-              </div>
+        <!-- Experience Section -->
+        <section id="experience" class="bg-white rounded-lg shadow-lg p-8 mb-8 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-purple-600 mb-6 border-b-4 border-purple-600 pb-2">Work Experience</h2>
+            <div class="space-y-6">
+                <div class="border-l-4 border-purple-600 pl-6">
+                    <h3 class="text-xl font-bold text-gray-800">Senior Software Engineer</h3>
+                    <p class="text-purple-600 font-semibold">Al Yalayis Government Transactions Center | Jan 2024 - May 2025</p>
+                    <p class="text-gray-700 mt-2">Leading development of enterprise web applications, mentoring junior developers, and implementing best practices for code quality and performance.</p>
+                </div>
+                <div class="border-l-4 border-indigo-600 pl-6">
+                    <h3 class="text-xl font-bold text-gray-800">Full Stack Developer</h3>
+                    <p class="text-indigo-600 font-semibold">Vanilla Networks Pvt. Ltd. | Jun 2022 - Feb 2023</p>
+                    <p class="text-gray-700 mt-2">Developed and maintained multiple client projects, worked with cross-functional teams, and delivered high-quality solutions on time.</p>
+                </div>
+                <div class="border-l-4 border-purple-500 pl-6">
+                    <h3 class="text-xl font-bold text-gray-800">Junior Developer</h3>
+                    <p class="text-purple-500 font-semibold">ReviewBit | Nov 2021 - May 2022</p>
+                    <p class="text-gray-700 mt-2">Built responsive web applications, collaborated with designers, and gained experience in modern development frameworks and tools.</p>
+                </div>
             </div>
-          </div>
+        </section>
 
-          <div class="col-md-4 mt-4">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body text-center py-4">
-                <h4 class="card-title">Tenzies Game</h4>
-                <p class="card-text mx-5 text-muted d-none d-lg-block">A tenzies game developed using technology react.js</p>
-                <a href="https://github.com/najeermk/react-game-app" class="btn btn-outline-primary btn-lg mt-3">
-                  Github link
-                </a>
-              </div>
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white rounded-lg shadow-lg p-8 mb-8 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-purple-600 mb-6 border-b-4 border-purple-600 pb-2">Featured Projects</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-gradient-to-r from-purple-500 to-indigo-500 h-40 flex items-center justify-center text-white text-4xl font-bold">
+                        
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Job Site</h3>
+                        <p class="text-gray-600 mb-4">A Job site developed by using PHP Laravel and MySQL. </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">PHP</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">Laravel</span>
+                            <span class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <!-- <a href="#" class="text-purple-600 font-semibold hover:text-indigo-600">View Demo →</a> -->
+                            <a href="https://github.com/najeermk/laravelProject" target="_blank" class="text-purple-600 font-semibold hover:text-indigo-600">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-40 flex items-center justify-center text-white text-4xl font-bold">
+                        
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">A Blogging site developed using MERN stack</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">React.js</span>
+                            <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">Node.js</span>
+                            <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                            <span class="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm">Express.js</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <!-- <a href="#" class="text-purple-600 font-semibold hover:text-indigo-600">View Demo →</a> -->
+                            <a href="https://github.com/najeermk/blog.git" target="_blank" class="text-purple-600 font-semibold hover:text-indigo-600">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-gradient-to-r from-purple-600 to-pink-500 h-40 flex items-center justify-center text-white text-4xl font-bold">
+                        
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Tenzies Game</h3>
+                        <p class="text-gray-600 mb-4">A tenzies game developed using technology react.js.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">React</span>
+                            <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">CSS</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <!-- <a href="#" class="text-purple-600 font-semibold hover:text-indigo-600">View Demo →</a> -->
+                            <a href="https://github.com/najeermk/react-game-app" target="_blank" class="text-purple-600 font-semibold hover:text-indigo-600">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-gradient-to-r from-indigo-600 to-blue-500 h-40 flex items-center justify-center text-white text-4xl font-bold">
+                        
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Blogging Site</h3>
+                        <p class="text-gray-600 mb-4">A Blogging site developed using laravel framework.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">PHP</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">Laravel</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <!-- <a href="#" class="text-purple-600 font-semibold hover:text-indigo-600">View Demo →</a> -->
+                            <a href="https://github.com/najeermk/blogApp" class="text-purple-600 font-semibold hover:text-indigo-600" target="_blank">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="bg-gradient-to-r from-indigo-600 to-blue-500 h-40 flex items-center justify-center text-white text-4xl font-bold">
+                        
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Logging System</h3>
+                        <p class="text-gray-600 mb-4">A Login system app developed using Codeigniter.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">PHP</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">CodeIgniter</span>
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <!-- <a href="#" class="text-purple-600 font-semibold hover:text-indigo-600">View Demo →</a> -->
+                            <a href="https://github.com/najeermk/ci-project" class="text-purple-600 font-semibold hover:text-indigo-600" target="_blank">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </section>
 
-          <div class="col-md-4 mt-4">
-            <div class="card border-0 shadow-sm">
-              <div class="card-body text-center py-4">
-                <h4 class="card-title">Blogging Site</h4>
-                <p class="card-text mx-5 text-muted d-none d-lg-block">A Blogging site developed using MERN stack (MongoDB, Express.js, React.js, Node.js)</p>
-                <a href="https://github.com/najeermk/blog.git" class="btn btn-outline-primary btn-lg mt-3">
-                  Github link
-                </a>
-              </div>
-            </div>
-          </div>
-
-      </div>
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white rounded-lg shadow-lg p-8 mb-8 scroll-mt-20">
+            <h2 class="text-3xl font-bold text-purple-600 mb-6 border-b-4 border-purple-600 pb-2">Get In Touch</h2>
+            <!-- <div class="grid"> -->
+                <div>
+                    <p class="text-gray-700 text-lg mb-6">
+                        I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="flex justify-center gap-8">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-gray-500 text-xl"></i>
+                            <span class="text-gray-700">najeermk96@gmail.com</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-phone text-blue-600 text-xl"></i>
+                            <span class="text-gray-700">+971 502170877</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-map-marker-alt text-purple-600 text-xl"></i>
+                            <span class="text-gray-700">Dubai, UAE</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center gap-8 mt-5">
+                        <a href="https://www.github.com/najeermk" class="text-slate-900 hover:text-slate-600 transition text-3xl" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/najeermk" class="text-indigo-600 hover:text-indigo-400 transition text-3xl" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:najeermk96@gmail.com" class="text-gray-600 hover:text-gray-400 transition text-3xl" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/971502170877" target="_blank" class="text-green-700 hover:text-green-500 transition text-3xl">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- <form class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600">
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600">
+                    <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
+                    <button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-indigo-700 transition">Send Message</button>
+                </form> -->
+            <!-- </div> -->
+        </section>
     </div>
-  </section>
 
-<hr>
-  <!-- contact -->
-  <section id="contact">
-    <div class="container-lg">
-      
-      <div class="text-center">
-        <h2>Get in Touch</h2>
-      </div>
-      <div class="row my-5">
-        <ul class="list-group list-group-horizontal justify-content-evenly">
-          <li class="list-group-item"><a href="https://www.linkedin.com/in/najeermk" class="fa fa-linkedin fa-lg"></a></li>
-          <li class="list-group-item"><a href="mailto:najeermk96@gmail.com" class="fa fa-envelope fa-lg"></a></li>
-          <li class="list-group-item"><a href="https://github.com/najeermk" class="fa fa-github fa-lg"></a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
- 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Najeer MK. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <script src="script.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
