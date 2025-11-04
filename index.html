@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Software Developer</title>
+    <title>Najeer M K - Software Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,7 +12,7 @@
     <header class="bg-gradient-to-r from-indigo-700 to-indigo-500 text-slate-100 py-6">
         <div class="container mx-auto px-4 text-center">
             <h1 class="text-5xl font-bold mb-4">NAJEER M K</h1>
-            <p class="text-xl opacity-90">Software Engineer</p>
+            <p class="text-xl opacity-90 italic">Software Engineer</p>
             <div class="mt-6 flex justify-center gap-4">
                 <a href="#contact" class="bg-white text-gray-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-200 transition">Contact Me</a>
                 <a href="#projects" class="border-2 border-slate-100 px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-gray-700 transition">View Work</a>
@@ -45,7 +45,7 @@
                 </div> -->
                 <div class="">
                     <p class="text-gray-700 text-lg mb-4">
-                        Hi! I'm a passionate Software Engineer with 5+ years of experience building web applications and software solutions. I specialize in creating efficient, scalable, and user-friendly applications.
+                        Hi! I'm a passionate Software Engineer with <span id="experience-years">5</span> years of experience building web applications and software solutions. I specialize in creating efficient, scalable, and user-friendly applications.
                     </p>
                     <p class="text-gray-700 text-lg mb-4">
                         I love solving complex problems and turning ideas into reality through code. When I'm not coding, you can find me contributing to open-source projects or learning new technologies.
@@ -244,7 +244,7 @@
                             <span class="text-gray-700">+971 502170877</span>
                         </div>
                         <div class="flex items-center gap-3">
-                            <i class="fas fa-map-marker-alt text-purple-600 text-xl"></i>
+                            <i class="fas fa-map-marker-alt text-green-800 text-xl"></i>
                             <span class="text-gray-700">Dubai, UAE</span>
                         </div>
                     </div>
@@ -291,6 +291,9 @@
                 }
             });
         });
+
+        // Calculate and display years of experience
+        document.getElementById('experience-years').textContent = new Date().getFullYear() - 2020;
     </script>
 </body>
 </html>
